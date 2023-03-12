@@ -1,44 +1,27 @@
-/* スクロールバー削除 */
-::-webkit-scrollbar {
+/* スクロールバー、キャラアイコン削除 */
+::-webkit-scrollbar,
+.MuiBadge-root {
   display: none !important;
 }
 
-
-/* キャラアイコンを削除 */
-.MuiBadge-root {
-  display: none;
+/* ステータス文字のフォントサイズ調整 */
+.MuiTypography-root{
+    font-size: 3rem;
 }
 
-/* ステータスの横並びの数調整 キャラソースL.17参照*/
+/* ステータス横並び数調整 キャラソースL.17参照*/
 .clruJQ {
-    margin-left: 4px;
-    max-width: 100px;/*ここで制御*/
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 300px;/*ここで制御 max-width÷↓のwidthの商が大体の横並びの数*/
 }
 
-/* ステータスの白枠の横の長さ調整 キャラソースL.18参照*/
+/* ステータス白枠の横幅調整 キャラソースL.18参照*/
 .jrZSzN {
-    margin: 2px;
-    width: 80px;/*ステータスの横幅制御：デフォルト96px*/
-    position: relative;
-    cursor: pointer;
+    margin: 5px;/*ステータス同士の隙間の幅*/
+    width: 300px;/*ステータスの横幅制御：デフォルト96px*/
+    height: 50px;/*小さくすると文字が見切れる*/
 }
 
-.MuiAvatar-root {
-    /*display: flex;*/
-    width: 40px;
-    height: 40px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    font-size: 1.25rem;
-    align-items: flex-start;
-    /*align-items: center;*/
-    flex-shrink: 0;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    line-height: 1;
-    user-select: none;
-    /*border-radius: 50%;*/
-    justify-content: center;
+/* ステータス白枠の縦幅調整 キャラソースL.27参照 */
+.iLZzml{
+    height: 50px;
 }
