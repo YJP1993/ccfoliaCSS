@@ -16,19 +16,19 @@ body {
     font-size: 3rem;
 }
 
-/* ステータス横並び数調整 キャラソースL.17参照*/
-.MfEgW {
+/* ステータス横並び数調整 .MuiBadge-rootの兄弟要素の子要素*/
+.MuiBadge-root+div>div {
     max-width: 400px;/*大体の横並びの数=[max-width]÷[↓のwidth]*/
 }
 
-/* ステータス白枠の横幅調整 キャラソースL.18参照*/
-.iJGjsB {
+/* ステータス白枠の横幅調整 ↑のさらに子要素*/
+.MuiBadge-root+div>div>div {
     margin: 5px;/*ステータス同士の隙間の幅*/
     width: 270px;/*ステータスの横幅制御：デフォルト96px CoCは270px,DX3rdは350pxくらいが良いかも*/
     height: 50px;/*小さくすると文字が見切れる*/
 }
 
-/* ステータス白枠の縦幅調整 キャラソースL.25,27参照 */
-.iWWCh,.dZilmu{
+/* ステータス白枠の縦幅調整 ↑のさらに子要素ぜんぶ*/
+.MuiBadge-root+div>div>div>div *{
     height: 50px;
 }
